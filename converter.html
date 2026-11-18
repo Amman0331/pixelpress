@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#17171b"><title>Pixelpress — WebP Studio</title><meta name="description" content="Convert images to WebP in your browser with batch export, quality controls and resizing."><link rel="icon" href="assets/mark.svg"><link rel="stylesheet" href="style.css"><script defer src="icons.js"></script><script defer src="comparison.js"></script><script defer src="app.js"></script></head>
+<body><header><div class="navwrap"><a class="brand" href="index.html"><img src="assets/mark.svg" alt="">Pixelpress</a><nav aria-label="Main navigation"><a href="index.html">Home</a><a class="active" href="#converter"><i data-icon="sliders"></i>Converter</a><a href="#integrations"><i data-icon="blocks"></i>Integrations</a><a href="index.html#tutorial">Tutorial</a></nav><span class="local"><b></b>Processing locally</span></div></header>
+<main id="converter"><div class="intro"><div class="eyebrow"><span class="pixel-cross"></span> IMAGE WORKSPACE</div><h1>WebP Studio<span>.</span></h1><p>Turn your images into lightweight WebP files, right in your browser.</p></div>
+<div class="workspace"><section class="panel queue"><div class="panelhead"><h2><i data-icon="layers"></i>Image queue</h2><span id="count" class="count">0 files</span></div><input type="file" id="files" accept="image/png,image/jpeg,image/webp,image/bmp,image/avif" multiple hidden>
+<div id="drop"><div class="dropempty" id="empty"><img class="art" src="assets/image-stack.png" alt=""><h3>Drop your images here</h3><p>PNG, JPG, WebP, AVIF, or BMP</p><button class="choose" id="browse"><i data-icon="plus"></i>Choose images</button></div><div id="items" hidden></div></div>
+<div class="queuefoot"><span><i data-icon="shield"></i>Files stay on your device</span><button id="sample" class="textbtn">Try a sample <i data-icon="arrow-up-right"></i></button><button id="add" class="textbtn" hidden><i data-icon="plus"></i>Add images</button></div></section>
+<section class="panel settings"><div class="panelhead"><h2><i data-icon="sliders"></i>Export settings</h2></div><div class="settingsbody"><label>Output format</label><div class="format"><span class="fileico"><i data-icon="file"></i></span><strong>WebP</strong><span class="ext">.webp</span></div>
+<div class="quality"><label for="quality">Quality</label><output id="value" for="quality">82%</output></div><input id="quality" type="range" min="1" max="100" value="82"><div class="ends"><span>Smaller file</span><span>Higher quality</span></div>
+<div class="resize"><label for="resize"><i data-icon="resize"></i>Resize images</label><input type="checkbox" role="switch" id="resize"></div><div id="widthwrap" hidden><label for="maxwidth">Maximum width (px)</label><input id="maxwidth" type="number" value="1600" min="1" max="16384"></div>
+<button id="convert" class="convert"><i data-icon="bolt"></i><span>Convert to WebP</span></button><button id="downloadall" class="choose" hidden><i data-icon="download"></i>Download all (.zip)</button></div></section></div>
+<p id="status" role="status" aria-live="polite"></p>
+<section id="comparison" class="panel" hidden aria-labelledby="comparison-title">
+<div class="panelhead"><h2 id="comparison-title">Image comparison</h2><span id="compared-file"></span></div>
+<div class="comparison-body">
+<div class="comparison-preview">
+<div id="compare-stage" hidden>
+<canvas id="original-frame" aria-label="Original image"></canvas>
+<canvas id="webp-frame" aria-label="Converted WebP image"></canvas>
+<span class="frame-label before-label">Original</span><span class="frame-label after-label">WebP</span>
+<span class="wipe-line" aria-hidden="true"><b>↔</b></span>
+<input type="range" id="wipe" min="0" max="100" value="50" aria-label="Reveal original image">
+</div><span id="compare-loading" role="status"></span>
+</div>
+<div class="compare-stats"><div><span>Estimated compression loss</span><strong id="compare-loss"></strong></div>
+<div><span>File size</span><strong id="compare-size"></strong><small id="compare-bytes"></small></div>
+<div><span>Dimensions</span><small id="compare-pixels"></small></div>
+<details><summary>How is loss estimated?</summary><p>We compare sampled areas of the encoded WebP with the image just before compression. The estimate is 100 × (1 − sampled RGB structural similarity). A lower value means a closer match in those samples. Resizing is shown separately under Dimensions.</p></details>
+</div></div></section>
+<section id="integrations"><div class="sectionhead"><h2>Integrations</h2><span>3 tools</span></div><p>Bring WebP export into your workflow.</p><div class="cards">
+<button class="card" data-integration="photoshop"><div class="appicon ps">Ps</div><div class="cardtext"><small>PLUGIN</small><h3>Photoshop</h3></div><i data-icon="arrow-up-right"></i></button>
+<button class="card" data-integration="canva"><div class="appicon canva">C</div><div class="cardtext"><small>EDITOR APP</small><h3>Canva</h3></div><i data-icon="arrow-up-right"></i></button>
+<button class="card" data-integration="browser"><div class="appicon browser"><span></span></div><div class="cardtext"><small>EXTENSION</small><h3>Chrome &amp; Edge</h3></div><i data-icon="arrow-up-right"></i></button>
+</div></section></main><footer><span class="footerbrand"><img src="assets/mark.svg" alt="">Pixelpress</span><span>WebP Studio <em>/</em> v1.2</span></footer>
+<dialog id="dialog"><div class="dialoghead"><span class="eyebrow">INTEGRATIONS</span><button class="square" id="close" aria-label="Close"><i data-icon="x"></i></button></div><h2 id="dialogtitle"></h2><p id="dialogdesc"></p><ol id="steps"></ol><a class="choose" id="package" download><i data-icon="download"></i><span>Download package</span></a></dialog>
+</body></html>

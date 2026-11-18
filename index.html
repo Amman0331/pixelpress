@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#17171b"><meta name="description" content="Convert and compare WebP images locally. Explore Pixelpress for your browser, Photoshop and Canva, or follow the video tutorial.">
+<title>Pixelpress — Image to WebP</title><link rel="icon" href="assets/mark.svg">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="home.css"><script defer src="home.js"></script>
+</head>
+<body class="home">
+<header><div class="navwrap"><a class="brand" href="index.html"><img src="assets/mark.svg" alt="">Pixelpress</a><nav aria-label="Main navigation"><a class="active" aria-current="page" href="index.html">Home</a><a href="converter.html">Converter</a><a href="#plugins">Integrations</a><a href="#tutorial">Tutorial</a></nav><span class="local"><b></b>Processing locally</span></div></header>
+<main>
+<section class="home-hero" aria-labelledby="home-title"><div class="hero-copy">
+<h1 id="home-title">Images<br>to <span>WebP.</span></h1>
+<p>Convert a batch of images, compare the original with the export, and choose how much detail to keep.</p>
+<div class="hero-actions"><a class="hero-primary" href="converter.html">Open converter <span aria-hidden="true">↗</span></a><a class="watch-link" href="#tutorial"><span class="play-icon" aria-hidden="true">▶</span>Watch tutorial</a></div>
+</div><figure class="demo-window"><div class="windowhead"><div class="windots" aria-hidden="true"><b></b><b></b><b></b></div><span>alpine-lake</span><span class="tiny-grid" aria-hidden="true">▦</span></div>
+<div class="hero-demo" id="hero-demo"><img src="assets/alpine-lake.webp" alt="Pixel-art mountain lake at sunset, exported as WebP" width="880" height="534"><img src="assets/alpine-lake.png" class="original" alt="" width="880" height="534">
+<span class="im-label png">PNG</span><span class="im-label webp">WebP</span><span class="demo-divider"><b aria-hidden="true">↔</b></span><input id="demo-wipe" type="range" min="0" max="100" value="50" aria-label="Compare original PNG and WebP" aria-valuetext="50 percent original"></div>
+<figcaption><span>17.7 KB <em>→</em> 14.9 KB</span><strong>15.8% smaller</strong></figcaption></figure></section>
+<section id="tutorial" class="learn" aria-labelledby="learn-title"><div class="learn-copy"><span class="section-kind">VIDEO TUTORIAL</span><h2 id="learn-title">Your first <br>WebP export.</h2><p>Follow the browser extension from installation to download. The final chapters cover Photoshop and Canva.</p>
+<div class="chapters" id="chapters" aria-label="Video chapters"></div>
+<a class="download-lesson" href="media/pixelpress-tutorial.mp4" download>Download tutorial <span aria-hidden="true">↓</span></a></div>
+<div class="video-wrap"><video id="lesson" controls playsinline preload="metadata" poster="media/tutorial-poster.jpg" aria-label="How to use Pixelpress"><source src="media/pixelpress-tutorial.mp4" type="video/mp4"><track kind="captions" srclang="en" label="English" src="media/tutorial-en.vtt">Your browser supports the downloadable MP4 version.</video></div>
+</section>
+<section class="tool-section" id="plugins" aria-labelledby="tools-title"><div class="sectionhead"><h2 id="tools-title">Use Pixelpress in your apps</h2></div>
+<div class="cards">
+<a class="card" href="converter.html?tool=browser#integrations"><div class="appicon browser"><span></span></div><div class="cardtext"><small>EXTENSION</small><h3>Chrome &amp; Edge</h3></div><span class="card-arrow" aria-hidden="true">↗</span></a>
+<a class="card" href="converter.html?tool=photoshop#integrations"><div class="appicon ps">Ps</div><div class="cardtext"><small>PLUGIN</small><h3>Photoshop</h3></div><span class="card-arrow" aria-hidden="true">↗</span></a>
+<a class="card" href="converter.html?tool=canva#integrations"><div class="appicon canva">C</div><div class="cardtext"><small>EDITOR APP</small><h3>Canva</h3></div><span class="card-arrow" aria-hidden="true">↗</span></a></div></section>
+</main><footer><a class="footerbrand" href="index.html"><img src="assets/mark.svg" alt="">Pixelpress</a><a href="converter.html">Open converter ↗</a></footer>
+</body></html>

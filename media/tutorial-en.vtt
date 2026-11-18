@@ -1,0 +1,61 @@
+WEBVTT
+
+00:00:00.280 --> 00:00:04.185
+In WebP Studio, open Integrations and choose Chrome and Edge.
+
+00:00:04.817 --> 00:00:08.509
+Download the package and extract the ZIP to a folder you can keep.
+
+00:00:09.280 --> 00:00:13.050
+Open the extensions page for your browser and enable Developer mode.
+
+00:00:13.733 --> 00:00:18.921
+Click Load unpacked. Select the extracted folder that contains manifest.json.
+
+00:00:19.697 --> 00:00:23.606
+Click Pixelpress in the browser’s extensions menu to open the converter.
+
+00:00:24.233 --> 00:00:28.288
+Choose images, drop them into the queue, or click Try a sample.
+
+00:00:29.030 --> 00:00:34.986
+Start at quality 82. Lower the slider for a smaller export, or raise it to retain detail.
+
+00:00:35.650 --> 00:00:40.090
+To limit the width, enable Resize images and enter a maximum in pixels.
+
+00:00:40.863 --> 00:00:45.316
+Click Convert to WebP. In a batch, choose Compare beside any converted image.
+
+00:00:45.983 --> 00:00:55.641
+Drag the divider to inspect edges and text. The sample at quality 82 shows 0.8% estimated loss and a 9.9% smaller file.
+
+00:00:56.447 --> 00:01:00.199
+Use the download icon beside the file for a single WebP.
+
+00:01:00.817 --> 00:01:05.567
+For a batch, click Download all. Extract the ZIP to access the converted images.
+
+00:01:06.363 --> 00:01:12.878
+For Photoshop desktop 23.3 or newer, extract the Photoshop package from Integrations.
+
+00:01:13.483 --> 00:01:19.741
+In Adobe UXP Developer Tool, choose Add Plugin, select manifest.json, and load the panel.
+
+00:01:20.530 --> 00:01:26.026
+Open an 8-bit RGB document. From the Plugins menu, choose WebP Export.
+
+00:01:26.650 --> 00:01:32.029
+Set the quality or use lossless compression. Click Save WebP copy and pick a destination.
+
+00:01:32.780 --> 00:01:40.966
+Extract the Canva app. In its folder, run npm ci and npm start with Node 22.12 or newer. Keep the terminal open.
+
+00:01:41.567 --> 00:01:49.158
+In the Developer Portal, enable Design Editor and the design content read permission. Upload dist/app.js and choose Preview.
+
+00:01:49.947 --> 00:01:56.811
+In your Canva design, click Choose design pages and confirm your selection. Click Open export for the page you want.
+
+00:01:57.483 --> 00:02:03.684
+In the local companion, choose quality, convert, and download your WebP. Repeat for each page.
