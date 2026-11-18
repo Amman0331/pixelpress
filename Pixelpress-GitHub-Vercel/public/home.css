@@ -1,0 +1,26 @@
+.home{background:#17171b}
+.home .navwrap{gap:44px}
+.home-hero{display:grid;grid-template-columns:0.87fr 1.13fr;gap:50px;align-items:center;padding:76px 0 70px}
+.home h1{font-size:clamp(68px,7.6vw,108px);letter-spacing:-.085em;line-height:.9;margin:0 0 24px;font-weight:680}
+.home h1 span{color:#c5aff8}.hero-copy p,.learn-copy p{font-size:16px;line-height:1.62;color:#bcb8c5;max-width:380px}
+.hero-actions{display:flex;align-items:center;gap:23px;margin-top:28px}
+.hero-primary,.watch-link{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:650}
+.hero-primary{background:var(--lime);color:#23251d;padding:14px 18px;border-radius:7px}.hero-primary span{font-size:19px}.hero-primary:hover{background:#edf9c9}
+.watch-link{color:#e7ddf7}.watch-link:hover,.download-lesson:hover{text-decoration:underline}.play-icon{font-size:9px;width:23px;height:23px;display:grid;place-items:center;padding-left:2px;border:1px solid #706779;border-radius:50%}
+.demo-window{background:#242229;border:1px solid #5b5168;box-shadow:7px 8px 0 #312a3a;border-radius:13px;overflow:hidden;margin:0;min-width:0}
+.windowhead,.demo-window figcaption{display:flex;align-items:center;justify-content:space-between;padding:11px 16px;font:11px var(--mono);color:#c2bccd}
+.windowhead{background:#29252e}.windots{display:flex;gap:4px}.windots b{height:6px;width:6px;border-radius:50%;background:#a293af}.windots b:nth-child(2){background:#786b88}.windots b:nth-child(3){background:#5c5268}.tiny-grid{color:#bbaacc}
+.hero-demo{position:relative;--split:50%;line-height:0}.hero-demo img{width:100%;height:auto;display:block}.hero-demo .original{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--split)) 0 0)}
+.im-label{font:600 10px var(--mono);position:absolute;top:12px;padding:5px 8px;border:1px solid #c9c0d277;background:#24212cce;border-radius:4px;color:#faf6ff}.im-label.png{left:13px}.im-label.webp{right:13px}
+.demo-divider{position:absolute;inset-block:0;left:var(--split);width:2px;background:#fff9ed}.demo-divider b{position:absolute;top:50%;transform:translate(-48%,-50%);display:grid;place-items:center;background:#fff9ed;color:#3d3546;width:34px;height:34px;border-radius:50%;font:700 17px Arial;box-shadow:0 2px 8px #322a3422}
+#demo-wipe{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize}.hero-demo:focus-within{outline:3px solid var(--lime);outline-offset:-3px}
+.demo-window figcaption{min-height:42px}.demo-window figcaption em{font-style:normal;color:#99909f}.demo-window figcaption strong{color:#d7e6b0;font-weight:500}
+.learn{border-block:1px solid #38353f;display:grid;grid-template-columns:.75fr 1.25fr;gap:58px;align-items:center;padding:48px 0}
+.section-kind{color:var(--lilac);font:600 10px var(--mono);letter-spacing:1.5px}.learn h2{font-size:clamp(36px,3.9vw,55px);letter-spacing:-.065em;line-height:1.03;margin:12px 0}.learn-copy p{font-size:14px;max-width:338px}
+.video-wrap{padding:7px;border-radius:12px;border:1px solid #514958;background:#25222b;min-width:0}.video-wrap video{width:100%;display:block;border-radius:7px;aspect-ratio:16/9;background:#1b1920}
+.chapters{display:flex;flex-direction:column;align-items:start;gap:6px;margin:14px 0}.chapters:empty{margin:0}.chapters button{display:flex;gap:10px;align-items:center;background:none;padding:2px 0;color:#d3cddc;font-size:12px}.chapters button:hover{text-decoration:underline}.chapters time{color:var(--lilac);font:11px var(--mono)}
+.download-lesson{display:inline-block;margin-top:12px;font-size:12px;color:#ccb9ea}.download-lesson span{margin-left:5px}
+.tool-section{margin:36px 0 40px}.card-arrow{margin-left:auto;color:#c6bcd0}.home footer{margin-top:0}
+@media(max-width:800px){.home-hero{gap:28px;padding:50px 0}.learn{gap:28px}.hero-actions{gap:14px}.hero-primary,.watch-link{font-size:12px}.home .navwrap{gap:20px}}
+@media(max-width:660px){.home-hero,.learn{grid-template-columns:1fr;gap:27px}.home-hero{padding:35px 0 38px}.home h1{font-size:76px}.hero-copy p{font-size:15px}.hero-actions{margin-top:20px}.learn{padding:32px 0}.learn h2 br{display:none}.learn h2 br:after{content:' '}.home .navwrap{gap:4px}.home nav a,nav a{font-size:11px;padding:6px 5px}.tool-section{margin:28px 0}.demo-window{margin-right:6px}.home .brand{font-size:18px}}
+@media(max-width:390px){.navwrap{gap:2px}.navwrap nav{gap:0}.navwrap nav a{font-size:10px;padding:6px 4px}}
